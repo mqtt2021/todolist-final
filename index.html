@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolist4</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="./asset/font/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+<body>
+   
+    <div class="father">
+        <div class="form-father">
+            <div class="form">
+                <div class="form-item form-item-title">
+                    <h1 class="title">Todo App</h1>
+                </div>
+                <div class="form-item form-item-input-and-add">
+                    <input class="input" placeholder="  Add your new to do" type="text" name="task" id="">
+                    <button onclick="addItem(gettodolist,render)" class="button-add"><i class="icon fa-solid fa-plus"></i></button>
+                </div>
+                
+                <div class="form-item form-item-todolist"> 
+                    <ul class="list-to-do">
+
+                    </ul>
+                </div>
+                <div class="form-item remain">
+                    <div class="remain-item remaining-text"></div>
+                    <div class="remain-item div-button-clear"><button onclick="deleteAllItems(gettodolist,render)" class="button-clear">Clear All</button></div>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+   
+</body>
+</html>
